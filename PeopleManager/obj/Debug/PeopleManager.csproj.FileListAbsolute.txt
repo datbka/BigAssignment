@@ -1,0 +1,16 @@
+D:\repos\PeopleManager\PeopleManager\bin\Debug\PeopleManager.exe.config
+D:\repos\PeopleManager\PeopleManager\bin\Debug\PeopleManager.exe
+D:\repos\PeopleManager\PeopleManager\bin\Debug\PeopleManager.pdb
+D:\repos\PeopleManager\PeopleManager\obj\Debug\PeopleManager.csproj.AssemblyReference.cache
+D:\repos\PeopleManager\PeopleManager\obj\Debug\PeopleManager.Properties.Resources.resources
+D:\repos\PeopleManager\PeopleManager\obj\Debug\PeopleManager.csproj.GenerateResource.cache
+D:\repos\PeopleManager\PeopleManager\obj\Debug\PeopleManager.csproj.CoreCompileInputs.cache
+D:\repos\PeopleManager\PeopleManager\obj\Debug\PeopleManager.exe
+D:\repos\PeopleManager\PeopleManager\obj\Debug\PeopleManager.pdb
+D:\repos\PeopleManager\PeopleManager\obj\Debug\PeopleManager.LoginForm.resources
+D:\repos\PeopleManager\PeopleManager\obj\Debug\PeopleManager.gui.form.MainForm.resources
+D:\repos\PeopleManager\PeopleManager\obj\Debug\PeopleManager.gui.form.PersonForm.resources
+D:\repos\PeopleManager\PeopleManager\obj\Debug\PeopleManager.gui.form.FamilyForm.resources
+D:\repos\PeopleManager\PeopleManager\bin\Debug\FontAwesome.Sharp.dll
+D:\repos\PeopleManager\PeopleManager\obj\Debug\PeopleManager.csproj.CopyComplete
+D:\repos\PeopleManager\PeopleManager\obj\Debug\PeopleManager.gui.form.PanelAdd.resources
