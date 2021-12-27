@@ -13,4 +13,8 @@ D:\repos\PeopleManager\PeopleManager\obj\Debug\PeopleManager.gui.form.PersonForm
 D:\repos\PeopleManager\PeopleManager\obj\Debug\PeopleManager.gui.form.FamilyForm.resources
 D:\repos\PeopleManager\PeopleManager\bin\Debug\FontAwesome.Sharp.dll
 D:\repos\PeopleManager\PeopleManager\obj\Debug\PeopleManager.csproj.CopyComplete
-D:\repos\PeopleManager\PeopleManager\obj\Debug\PeopleManager.gui.form.PanelAdd.resources
+D:\repos\PeopleManager\PeopleManager\obj\Debug\PeopleManager.exe.licenses
+D:\repos\PeopleManager\PeopleManager\bin\Debug\RJCodeAdvance.RJControls.dll
+D:\repos\PeopleManager\PeopleManager\obj\Debug\PeopleManager.gui.form.SubPanelAddPerson.resources
+D:\repos\PeopleManager\PeopleManager\obj\Debug\PeopleManager.gui.form.SubPanelRemovePerson.resources
+D:\repos\PeopleManager\PeopleManager\obj\Debug\PeopleManager.gui.form.SubPanelUpdate.resources

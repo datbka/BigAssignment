@@ -31,25 +31,27 @@ namespace PeopleManager.gui.form
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.panelSlideMenu = new System.Windows.Forms.Panel();
+            this.btnInfor = new FontAwesome.Sharp.IconButton();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.panelSubContribution = new System.Windows.Forms.Panel();
+            this.btnContribution = new FontAwesome.Sharp.IconButton();
+            this.btnFund = new FontAwesome.Sharp.IconButton();
+            this.btnContributionManagement = new FontAwesome.Sharp.IconButton();
             this.panelSubPeopleManagement = new System.Windows.Forms.Panel();
             this.btnFamily = new FontAwesome.Sharp.IconButton();
             this.btnPerson = new FontAwesome.Sharp.IconButton();
             this.btnPeopleManagement = new FontAwesome.Sharp.IconButton();
-            this.panelLogo = new System.Windows.Forms.Panel();
             this.panelContainer = new System.Windows.Forms.Panel();
-            this.btnContributionManagement = new FontAwesome.Sharp.IconButton();
-            this.panelSubContribution = new System.Windows.Forms.Panel();
-            this.btnContribution = new FontAwesome.Sharp.IconButton();
-            this.btnFund = new FontAwesome.Sharp.IconButton();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.panelLogo = new System.Windows.Forms.Panel();
             this.panelSlideMenu.SuspendLayout();
-            this.panelSubPeopleManagement.SuspendLayout();
             this.panelSubContribution.SuspendLayout();
+            this.panelSubPeopleManagement.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelSlideMenu
             // 
             this.panelSlideMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.panelSlideMenu.Controls.Add(this.btnInfor);
             this.panelSlideMenu.Controls.Add(this.iconButton1);
             this.panelSlideMenu.Controls.Add(this.panelSubContribution);
             this.panelSlideMenu.Controls.Add(this.btnContributionManagement);
@@ -61,6 +63,119 @@ namespace PeopleManager.gui.form
             this.panelSlideMenu.Name = "panelSlideMenu";
             this.panelSlideMenu.Size = new System.Drawing.Size(150, 600);
             this.panelSlideMenu.TabIndex = 0;
+            // 
+            // btnInfor
+            // 
+            this.btnInfor.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnInfor.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnInfor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInfor.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnInfor.IconChar = FontAwesome.Sharp.IconChar.InfoCircle;
+            this.btnInfor.IconColor = System.Drawing.Color.White;
+            this.btnInfor.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnInfor.IconSize = 40;
+            this.btnInfor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnInfor.Location = new System.Drawing.Point(0, 555);
+            this.btnInfor.Name = "btnInfor";
+            this.btnInfor.Size = new System.Drawing.Size(150, 45);
+            this.btnInfor.TabIndex = 7;
+            this.btnInfor.Text = "Thông tin";
+            this.btnInfor.UseVisualStyleBackColor = true;
+            // 
+            // iconButton1
+            // 
+            this.iconButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconButton1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton1.ForeColor = System.Drawing.Color.Gainsboro;
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.ListAlt;
+            this.iconButton1.IconColor = System.Drawing.Color.White;
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.IconSize = 40;
+            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.iconButton1.Location = new System.Drawing.Point(0, 360);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Size = new System.Drawing.Size(150, 45);
+            this.iconButton1.TabIndex = 6;
+            this.iconButton1.Text = "Thống kê";
+            this.iconButton1.UseVisualStyleBackColor = true;
+            // 
+            // panelSubContribution
+            // 
+            this.panelSubContribution.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.panelSubContribution.Controls.Add(this.btnContribution);
+            this.panelSubContribution.Controls.Add(this.btnFund);
+            this.panelSubContribution.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelSubContribution.Location = new System.Drawing.Point(0, 270);
+            this.panelSubContribution.Name = "panelSubContribution";
+            this.panelSubContribution.Size = new System.Drawing.Size(150, 90);
+            this.panelSubContribution.TabIndex = 5;
+            // 
+            // btnContribution
+            // 
+            this.btnContribution.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnContribution.FlatAppearance.BorderSize = 0;
+            this.btnContribution.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnContribution.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnContribution.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnContribution.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnContribution.IconChar = FontAwesome.Sharp.IconChar.DollarSign;
+            this.btnContribution.IconColor = System.Drawing.Color.White;
+            this.btnContribution.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnContribution.IconSize = 30;
+            this.btnContribution.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnContribution.Location = new System.Drawing.Point(0, 40);
+            this.btnContribution.Name = "btnContribution";
+            this.btnContribution.Padding = new System.Windows.Forms.Padding(0, 0, 40, 0);
+            this.btnContribution.Size = new System.Drawing.Size(150, 40);
+            this.btnContribution.TabIndex = 1;
+            this.btnContribution.Text = "Đóng phí";
+            this.btnContribution.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnContribution.UseVisualStyleBackColor = true;
+            this.btnContribution.Click += new System.EventHandler(this.btnContribution_Click_1);
+            // 
+            // btnFund
+            // 
+            this.btnFund.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnFund.FlatAppearance.BorderSize = 0;
+            this.btnFund.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnFund.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnFund.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFund.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnFund.IconChar = FontAwesome.Sharp.IconChar.FunnelDollar;
+            this.btnFund.IconColor = System.Drawing.Color.White;
+            this.btnFund.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnFund.IconSize = 30;
+            this.btnFund.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnFund.Location = new System.Drawing.Point(0, 0);
+            this.btnFund.Name = "btnFund";
+            this.btnFund.Padding = new System.Windows.Forms.Padding(0, 0, 35, 0);
+            this.btnFund.Size = new System.Drawing.Size(150, 40);
+            this.btnFund.TabIndex = 0;
+            this.btnFund.Text = "Khoản phí";
+            this.btnFund.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnFund.UseVisualStyleBackColor = true;
+            this.btnFund.Click += new System.EventHandler(this.btnFund_Click);
+            // 
+            // btnContributionManagement
+            // 
+            this.btnContributionManagement.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnContributionManagement.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnContributionManagement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnContributionManagement.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnContributionManagement.IconChar = FontAwesome.Sharp.IconChar.MoneyBill;
+            this.btnContributionManagement.IconColor = System.Drawing.Color.White;
+            this.btnContributionManagement.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnContributionManagement.IconSize = 40;
+            this.btnContributionManagement.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnContributionManagement.Location = new System.Drawing.Point(0, 225);
+            this.btnContributionManagement.Name = "btnContributionManagement";
+            this.btnContributionManagement.Size = new System.Drawing.Size(150, 45);
+            this.btnContributionManagement.TabIndex = 4;
+            this.btnContributionManagement.Text = "Quản lí đóng góp";
+            this.btnContributionManagement.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnContributionManagement.UseVisualStyleBackColor = true;
+            this.btnContributionManagement.Click += new System.EventHandler(this.btnContribution_Click);
             // 
             // panelSubPeopleManagement
             // 
@@ -139,6 +254,15 @@ namespace PeopleManager.gui.form
             this.btnPeopleManagement.UseVisualStyleBackColor = true;
             this.btnPeopleManagement.Click += new System.EventHandler(this.btnPeopleManagement_Click);
             // 
+            // panelContainer
+            // 
+            this.panelContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(75)))), ((int)(((byte)(105)))));
+            this.panelContainer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContainer.Location = new System.Drawing.Point(150, 0);
+            this.panelContainer.Name = "panelContainer";
+            this.panelContainer.Size = new System.Drawing.Size(835, 600);
+            this.panelContainer.TabIndex = 1;
+            // 
             // panelLogo
             // 
             this.panelLogo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelLogo.BackgroundImage")));
@@ -148,110 +272,6 @@ namespace PeopleManager.gui.form
             this.panelLogo.Name = "panelLogo";
             this.panelLogo.Size = new System.Drawing.Size(150, 90);
             this.panelLogo.TabIndex = 3;
-            // 
-            // panelContainer
-            // 
-            this.panelContainer.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panelContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContainer.Location = new System.Drawing.Point(150, 0);
-            this.panelContainer.Name = "panelContainer";
-            this.panelContainer.Size = new System.Drawing.Size(835, 600);
-            this.panelContainer.TabIndex = 1;
-            // 
-            // btnContributionManagement
-            // 
-            this.btnContributionManagement.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnContributionManagement.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnContributionManagement.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnContributionManagement.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnContributionManagement.IconChar = FontAwesome.Sharp.IconChar.MoneyBill;
-            this.btnContributionManagement.IconColor = System.Drawing.Color.White;
-            this.btnContributionManagement.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnContributionManagement.IconSize = 40;
-            this.btnContributionManagement.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnContributionManagement.Location = new System.Drawing.Point(0, 225);
-            this.btnContributionManagement.Name = "btnContributionManagement";
-            this.btnContributionManagement.Size = new System.Drawing.Size(150, 45);
-            this.btnContributionManagement.TabIndex = 4;
-            this.btnContributionManagement.Text = "Quản lí đóng góp";
-            this.btnContributionManagement.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnContributionManagement.UseVisualStyleBackColor = true;
-            this.btnContributionManagement.Click += new System.EventHandler(this.btnContribution_Click);
-            // 
-            // panelSubContribution
-            // 
-            this.panelSubContribution.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
-            this.panelSubContribution.Controls.Add(this.btnContribution);
-            this.panelSubContribution.Controls.Add(this.btnFund);
-            this.panelSubContribution.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelSubContribution.Location = new System.Drawing.Point(0, 270);
-            this.panelSubContribution.Name = "panelSubContribution";
-            this.panelSubContribution.Size = new System.Drawing.Size(150, 90);
-            this.panelSubContribution.TabIndex = 5;
-            // 
-            // btnContribution
-            // 
-            this.btnContribution.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnContribution.FlatAppearance.BorderSize = 0;
-            this.btnContribution.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnContribution.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnContribution.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnContribution.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnContribution.IconChar = FontAwesome.Sharp.IconChar.DollarSign;
-            this.btnContribution.IconColor = System.Drawing.Color.White;
-            this.btnContribution.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnContribution.IconSize = 30;
-            this.btnContribution.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnContribution.Location = new System.Drawing.Point(0, 40);
-            this.btnContribution.Name = "btnContribution";
-            this.btnContribution.Padding = new System.Windows.Forms.Padding(0, 0, 40, 0);
-            this.btnContribution.Size = new System.Drawing.Size(150, 40);
-            this.btnContribution.TabIndex = 1;
-            this.btnContribution.Text = "Đóng phí";
-            this.btnContribution.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnContribution.UseVisualStyleBackColor = true;
-            this.btnContribution.Click += new System.EventHandler(this.btnContribution_Click_1);
-            // 
-            // btnFund
-            // 
-            this.btnFund.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnFund.FlatAppearance.BorderSize = 0;
-            this.btnFund.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnFund.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnFund.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFund.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnFund.IconChar = FontAwesome.Sharp.IconChar.FunnelDollar;
-            this.btnFund.IconColor = System.Drawing.Color.White;
-            this.btnFund.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnFund.IconSize = 30;
-            this.btnFund.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFund.Location = new System.Drawing.Point(0, 0);
-            this.btnFund.Name = "btnFund";
-            this.btnFund.Padding = new System.Windows.Forms.Padding(0, 0, 35, 0);
-            this.btnFund.Size = new System.Drawing.Size(150, 40);
-            this.btnFund.TabIndex = 0;
-            this.btnFund.Text = "Khoản phí";
-            this.btnFund.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnFund.UseVisualStyleBackColor = true;
-            this.btnFund.Click += new System.EventHandler(this.btnFund_Click);
-            // 
-            // iconButton1
-            // 
-            this.iconButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconButton1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.ListAlt;
-            this.iconButton1.IconColor = System.Drawing.Color.White;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.IconSize = 40;
-            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton1.Location = new System.Drawing.Point(0, 360);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(150, 45);
-            this.iconButton1.TabIndex = 6;
-            this.iconButton1.Text = "Thống kê";
-            this.iconButton1.UseVisualStyleBackColor = true;
             // 
             // MainForm
             // 
@@ -264,8 +284,8 @@ namespace PeopleManager.gui.form
             this.Name = "MainForm";
             this.Text = "Quản lí nhân khẩu";
             this.panelSlideMenu.ResumeLayout(false);
-            this.panelSubPeopleManagement.ResumeLayout(false);
             this.panelSubContribution.ResumeLayout(false);
+            this.panelSubPeopleManagement.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -273,7 +293,6 @@ namespace PeopleManager.gui.form
         #endregion
 
         private System.Windows.Forms.Panel panelSlideMenu;
-        private System.Windows.Forms.Panel panelLogo;
         private System.Windows.Forms.Panel panelContainer;
         private System.Windows.Forms.Panel panelSubPeopleManagement;
         private FontAwesome.Sharp.IconButton btnFamily;
@@ -284,5 +303,7 @@ namespace PeopleManager.gui.form
         private FontAwesome.Sharp.IconButton btnFund;
         private FontAwesome.Sharp.IconButton btnContributionManagement;
         private FontAwesome.Sharp.IconButton iconButton1;
+        private FontAwesome.Sharp.IconButton btnInfor;
+        private System.Windows.Forms.Panel panelLogo;
     }
 }

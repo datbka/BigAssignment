@@ -41,6 +41,9 @@
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
+    <Reference Include="RJCodeAdvance.RJControls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\RJCodeAdvance.RJControls.1.0.0\lib\net45\RJCodeAdvance.RJControls.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xaml" />
@@ -56,6 +59,15 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="gui\customcontroller\CButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="gui\customcontroller\CTextBox.Designer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="gui\customcontroller\CTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="gui\form\FamilyForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,17 +86,29 @@
     <Compile Include="gui\form\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="gui\form\PanelAdd.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="gui\form\PanelAdd.Designer.cs">
-      <DependentUpon>PanelAdd.cs</DependentUpon>
-    </Compile>
     <Compile Include="gui\form\PersonForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="gui\form\PersonForm.Designer.cs">
       <DependentUpon>PersonForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\form\SubPanelAddPerson.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="gui\form\SubPanelAddPerson.Designer.cs">
+      <DependentUpon>SubPanelAddPerson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\form\SubPanelRemovePerson.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="gui\form\SubPanelRemovePerson.Designer.cs">
+      <DependentUpon>SubPanelRemovePerson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\form\SubPanelUpdate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="gui\form\SubPanelUpdate.Designer.cs">
+      <DependentUpon>SubPanelUpdate.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -97,12 +121,19 @@
     <EmbeddedResource Include="gui\form\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="gui\form\PanelAdd.resx">
-      <DependentUpon>PanelAdd.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="gui\form\PersonForm.resx">
       <DependentUpon>PersonForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="gui\form\SubPanelAddPerson.resx">
+      <DependentUpon>SubPanelAddPerson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\form\SubPanelRemovePerson.resx">
+      <DependentUpon>SubPanelRemovePerson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui\form\SubPanelUpdate.resx">
+      <DependentUpon>SubPanelUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
