@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PeopleManager.gui.form
 {
-    public partial class FamilyForm : Form
+    public partial class KhoanPhiForm : Form
     {
-        public FamilyForm()
+        public KhoanPhiForm()
         {
             InitializeComponent();
             HideControl();
@@ -120,4 +120,3 @@ namespace PeopleManager.gui.form
         }
     }
 }
-

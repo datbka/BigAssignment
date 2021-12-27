@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PeopleManager.gui.form
 {
-    public partial class FamilyForm : Form
+    public partial class ThuPhiForm : Form
     {
-        public FamilyForm()
+        public ThuPhiForm()
         {
             InitializeComponent();
             HideControl();

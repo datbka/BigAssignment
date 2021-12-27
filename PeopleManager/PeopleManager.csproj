@@ -74,6 +74,12 @@
     <Compile Include="gui\form\FamilyForm.Designer.cs">
       <DependentUpon>FamilyForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="gui\form\KhoanPhiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\form\KhoanPhiForm.Designer.cs">
+      <DependentUpon>KhoanPhiForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="gui\form\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +115,12 @@
     </Compile>
     <Compile Include="gui\form\SubPanelUpdate.Designer.cs">
       <DependentUpon>SubPanelUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui\form\ThuPhiForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui\form\ThuPhiForm.Designer.cs">
+      <DependentUpon>ThuPhiForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

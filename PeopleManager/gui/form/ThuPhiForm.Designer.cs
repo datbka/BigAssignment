@@ -1,7 +1,7 @@
 ﻿
 namespace PeopleManager.gui.form
 {
-    partial class FamilyForm
+    partial class ThuPhiForm
     {
         /// <summary>
         /// Required designer variable.
@@ -42,10 +42,9 @@ namespace PeopleManager.gui.form
             this.btnUpdate = new PeopleManager.gui.customcontroller.CButton();
             this.btnRemove = new PeopleManager.gui.customcontroller.CButton();
             this.btnAdd = new PeopleManager.gui.customcontroller.CButton();
-            this.FamilyId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HouseHolder = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PersonCount = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Address = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PersonNamePay = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.KhoanPhiName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.MenuDatagv.SuspendLayout();
@@ -110,10 +109,9 @@ namespace PeopleManager.gui.form
             this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.FamilyId,
-            this.HouseHolder,
-            this.PersonCount,
-            this.Address,});
+            this.PersonNamePay,
+            this.KhoanPhiName,
+            this.Date,});
             this.dataGridView1.ContextMenuStrip = this.MenuDatagv;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 210);
@@ -241,29 +239,25 @@ namespace PeopleManager.gui.form
             this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click_1);
             // 
-            // FamilyId
+            // KhoanPhiId
             // 
-            this.FamilyId.HeaderText = "Mã hộ";
-            this.FamilyId.Name = "FamilyId";
+            this.PersonNamePay.HeaderText = "Tên người nộp";
+            this.PersonNamePay.Name = "PersonNamePay";
+            this.PersonNamePay.Width = 200;
             // 
-            // HostName
+            // KhoanPhiName
             // 
-            this.HouseHolder.HeaderText = "Tên chủ hộ";
-            this.HouseHolder.Name = "HouseHolder";
-            this.HouseHolder.Width = 200;
+            this.KhoanPhiName.HeaderText = "Tên khoản phí";
+            this.KhoanPhiName.Name = "KhoanPhiName";
+            this.KhoanPhiName.Width = 200;
             // 
-            // PhoneNumber
+            // KhoanPhiType
             // 
-            this.PersonCount.HeaderText = "Số thành viên";
-            this.PersonCount.Name = "PersonCount";
+            this.Date.HeaderText = "Ngày nộp";
+            this.Date.Name = "Date";
+            this.Date.Width = 200;
             // 
-            // Address
-            // 
-            this.Address.HeaderText = "Địa chỉ";
-            this.Address.Name = "Address";
-            this.Address.Width = 200;
-            // 
-            // FamilyForm
+            // ThuPhiForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -271,8 +265,8 @@ namespace PeopleManager.gui.form
             this.ClientSize = new System.Drawing.Size(819, 561);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panelMenu);
-            this.Name = "FamilyForm";
-            this.Text = "Quản lý hộ khẩu";
+            this.Name = "ThuPhiForm";
+            this.Text = "Quản lý thu phí";
             this.panelMenu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.MenuDatagv.ResumeLayout(false);
@@ -292,9 +286,8 @@ namespace PeopleManager.gui.form
         private RJCodeAdvance.RJControls.RJDropdownMenu MenuDatagv;
         private System.Windows.Forms.ToolStripMenuItem updateToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem removeToolStripMenuItem;
-        private System.Windows.Forms.DataGridViewTextBoxColumn FamilyId;
-        private System.Windows.Forms.DataGridViewTextBoxColumn HouseHolder;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PersonCount;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Address;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PersonNamePay;
+        private System.Windows.Forms.DataGridViewTextBoxColumn KhoanPhiName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Date;
     }
 }

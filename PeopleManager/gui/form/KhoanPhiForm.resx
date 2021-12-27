@@ -117,24 +117,24 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Address.UserAddedColumn" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="FamilyId." xml:space="preserve">
     <value />
   </data>
-  <data name="FamilyId.UserAddedColumn" type="System.Boolean, mscorlib">
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="KhoanPhiId.UserAddedColumn" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="HouseHolder.UserAddedColumn" type="System.Boolean, mscorlib">
+  <data name="KhoanPhiName.UserAddedColumn" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="KhoanPhiType.UserAddedColumn" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="MenuDatagv.TrayLocation" type="System.Drawing.Point, System.Drawing">
     <value>17, 17</value>
   </data>
-  <data name="PersonCount.UserAddedColumn" type="System.Boolean, mscorlib">
+  <data name="Money.UserAddedColumn" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
 </root>
