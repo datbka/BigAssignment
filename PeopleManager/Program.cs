@@ -4,7 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using PeopleManager.gui.form;
-
+using PeopleManager.gui.config;
+using PeopleManager.service;
+using PeopleManager.service.DAO;
 
 namespace PeopleManager
 {
@@ -16,9 +18,18 @@ namespace PeopleManager
         [STAThread]
         static void Main()
         {
+            Config config = new Config();
+            IniFile inifile = new IniFile(Config.configfile);
+            string username = inifile.Read("username");
+            string pass = inifile.Read("password");
+            
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm());
+           
+            if (UserDAO.Instance.Exist(username, pass))
+                    Application.Run(new MainForm(username));
+            
+            else Application.Run(new LoginForm());
         }
     }
 }

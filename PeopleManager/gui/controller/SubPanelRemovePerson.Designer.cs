@@ -1,5 +1,5 @@
 ﻿
-namespace PeopleManager.gui.form
+namespace PeopleManager.gui.controller
 {
     partial class SubPanelRemovePerson
     {
@@ -31,7 +31,7 @@ namespace PeopleManager.gui.form
         {
             this.rjTextBox1 = new RJCodeAdvance.RJControls.RJTextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.rjButton1 = new RJCodeAdvance.RJControls.RJButton();
+            this.btnDelete = new RJCodeAdvance.RJControls.RJButton();
             this.iconClose = new FontAwesome.Sharp.IconPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.iconClose)).BeginInit();
             this.SuspendLayout();
@@ -68,23 +68,24 @@ namespace PeopleManager.gui.form
             this.label1.TabIndex = 1;
             this.label1.Text = "Nhập CMND cần xóa";
             // 
-            // rjButton1
+            // btnDelete
             // 
-            this.rjButton1.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.rjButton1.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.rjButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjButton1.BorderRadius = 10;
-            this.rjButton1.BorderSize = 0;
-            this.rjButton1.FlatAppearance.BorderSize = 0;
-            this.rjButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rjButton1.ForeColor = System.Drawing.Color.White;
-            this.rjButton1.Location = new System.Drawing.Point(603, 18);
-            this.rjButton1.Name = "rjButton1";
-            this.rjButton1.Size = new System.Drawing.Size(124, 31);
-            this.rjButton1.TabIndex = 2;
-            this.rjButton1.Text = "Xóa";
-            this.rjButton1.TextColor = System.Drawing.Color.White;
-            this.rjButton1.UseVisualStyleBackColor = false;
+            this.btnDelete.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnDelete.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnDelete.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnDelete.BorderRadius = 10;
+            this.btnDelete.BorderSize = 0;
+            this.btnDelete.FlatAppearance.BorderSize = 0;
+            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDelete.ForeColor = System.Drawing.Color.White;
+            this.btnDelete.Location = new System.Drawing.Point(603, 18);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(124, 31);
+            this.btnDelete.TabIndex = 2;
+            this.btnDelete.Text = "Xóa";
+            this.btnDelete.TextColor = System.Drawing.Color.White;
+            this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // iconClose
             // 
@@ -107,7 +108,7 @@ namespace PeopleManager.gui.form
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(75)))), ((int)(((byte)(105)))));
             this.Controls.Add(this.iconClose);
-            this.Controls.Add(this.rjButton1);
+            this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.rjTextBox1);
             this.Name = "SubPanelRemovePerson";
@@ -122,7 +123,7 @@ namespace PeopleManager.gui.form
 
         private RJCodeAdvance.RJControls.RJTextBox rjTextBox1;
         private System.Windows.Forms.Label label1;
-        private RJCodeAdvance.RJControls.RJButton rjButton1;
+        private RJCodeAdvance.RJControls.RJButton btnDelete;
         private FontAwesome.Sharp.IconPictureBox iconClose;
     }
 }

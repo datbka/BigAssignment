@@ -1,5 +1,5 @@
 ﻿
-namespace PeopleManager.gui.form
+namespace PeopleManager.gui.controller
 {
     partial class SubPanelAddPerson
     {
@@ -35,11 +35,11 @@ namespace PeopleManager.gui.form
             this.label2 = new System.Windows.Forms.Label();
             this.dateBirth = new RJCodeAdvance.RJControls.RJDatePicker();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtPhoneNumber = new RJCodeAdvance.RJControls.RJTextBox();
+            this.txtNickname = new RJCodeAdvance.RJControls.RJTextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtJob = new RJCodeAdvance.RJControls.RJTextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtAddressWork = new RJCodeAdvance.RJControls.RJTextBox();
+            this.txtJobplace = new RJCodeAdvance.RJControls.RJTextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtFamily = new RJCodeAdvance.RJControls.RJTextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -47,6 +47,15 @@ namespace PeopleManager.gui.form
             this.label8 = new System.Windows.Forms.Label();
             this.btnOk = new RJCodeAdvance.RJControls.RJButton();
             this.iconclose = new FontAwesome.Sharp.IconPictureBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.rbtnMale = new RJCodeAdvance.RJControls.RJRadioButton();
+            this.rbtnFemale = new RJCodeAdvance.RJControls.RJRadioButton();
+            this.txtAddress = new RJCodeAdvance.RJControls.RJTextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtEthnic = new RJCodeAdvance.RJControls.RJTextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txtbornplace = new RJCodeAdvance.RJControls.RJTextBox();
+            this.label12 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.iconclose)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,9 +65,9 @@ namespace PeopleManager.gui.form
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(13, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(54, 13);
+            this.label1.Size = new System.Drawing.Size(61, 13);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Họ và tên";
+            this.label1.Text = "Họ và tên *";
             // 
             // txtName
             // 
@@ -131,33 +140,33 @@ namespace PeopleManager.gui.form
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(14, 79);
+            this.label3.Location = new System.Drawing.Point(12, 79);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(54, 13);
+            this.label3.Size = new System.Drawing.Size(61, 13);
             this.label3.TabIndex = 8;
-            this.label3.Text = "Ngày sinh";
+            this.label3.Text = "Ngày sinh *";
             // 
-            // txtPhoneNumber
+            // txtNickname
             // 
-            this.txtPhoneNumber.BackColor = System.Drawing.SystemColors.Window;
-            this.txtPhoneNumber.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.txtPhoneNumber.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.txtPhoneNumber.BorderRadius = 10;
-            this.txtPhoneNumber.BorderSize = 1;
-            this.txtPhoneNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPhoneNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtPhoneNumber.Location = new System.Drawing.Point(375, 66);
-            this.txtPhoneNumber.Margin = new System.Windows.Forms.Padding(4);
-            this.txtPhoneNumber.Multiline = false;
-            this.txtPhoneNumber.Name = "txtPhoneNumber";
-            this.txtPhoneNumber.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtPhoneNumber.PasswordChar = false;
-            this.txtPhoneNumber.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtPhoneNumber.PlaceholderText = "";
-            this.txtPhoneNumber.Size = new System.Drawing.Size(157, 31);
-            this.txtPhoneNumber.TabIndex = 10;
-            this.txtPhoneNumber.Texts = "";
-            this.txtPhoneNumber.UnderlinedStyle = false;
+            this.txtNickname.BackColor = System.Drawing.SystemColors.Window;
+            this.txtNickname.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.txtNickname.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.txtNickname.BorderRadius = 10;
+            this.txtNickname.BorderSize = 1;
+            this.txtNickname.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNickname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtNickname.Location = new System.Drawing.Point(375, 66);
+            this.txtNickname.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNickname.Multiline = false;
+            this.txtNickname.Name = "txtNickname";
+            this.txtNickname.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtNickname.PasswordChar = false;
+            this.txtNickname.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtNickname.PlaceholderText = "";
+            this.txtNickname.Size = new System.Drawing.Size(157, 31);
+            this.txtNickname.TabIndex = 10;
+            this.txtNickname.Texts = "";
+            this.txtNickname.UnderlinedStyle = false;
             // 
             // label4
             // 
@@ -165,9 +174,9 @@ namespace PeopleManager.gui.form
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(298, 75);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(70, 13);
+            this.label4.Size = new System.Drawing.Size(45, 13);
             this.label4.TabIndex = 9;
-            this.label4.Text = "Số điện thoại";
+            this.label4.Text = "Bí danh";
             // 
             // txtJob
             // 
@@ -178,7 +187,7 @@ namespace PeopleManager.gui.form
             this.txtJob.BorderSize = 1;
             this.txtJob.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtJob.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtJob.Location = new System.Drawing.Point(620, 16);
+            this.txtJob.Location = new System.Drawing.Point(621, 116);
             this.txtJob.Margin = new System.Windows.Forms.Padding(4);
             this.txtJob.Multiline = false;
             this.txtJob.Name = "txtJob";
@@ -187,7 +196,7 @@ namespace PeopleManager.gui.form
             this.txtJob.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtJob.PlaceholderText = "";
             this.txtJob.Size = new System.Drawing.Size(157, 31);
-            this.txtJob.TabIndex = 12;
+            this.txtJob.TabIndex = 14;
             this.txtJob.Texts = "";
             this.txtJob.UnderlinedStyle = false;
             // 
@@ -195,46 +204,47 @@ namespace PeopleManager.gui.form
             // 
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(543, 25);
+            this.label5.Location = new System.Drawing.Point(544, 125);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(68, 13);
             this.label5.TabIndex = 11;
             this.label5.Text = "Nghề nghiệp";
             // 
-            // txtAddressWork
+            // txtJobplace
             // 
-            this.txtAddressWork.BackColor = System.Drawing.SystemColors.Window;
-            this.txtAddressWork.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.txtAddressWork.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.txtAddressWork.BorderRadius = 10;
-            this.txtAddressWork.BorderSize = 1;
-            this.txtAddressWork.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAddressWork.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtAddressWork.Location = new System.Drawing.Point(621, 66);
-            this.txtAddressWork.Margin = new System.Windows.Forms.Padding(4);
-            this.txtAddressWork.Multiline = false;
-            this.txtAddressWork.Name = "txtAddressWork";
-            this.txtAddressWork.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtAddressWork.PasswordChar = false;
-            this.txtAddressWork.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtAddressWork.PlaceholderText = "";
-            this.txtAddressWork.Size = new System.Drawing.Size(157, 31);
-            this.txtAddressWork.TabIndex = 14;
-            this.txtAddressWork.Texts = "";
-            this.txtAddressWork.UnderlinedStyle = false;
+            this.txtJobplace.BackColor = System.Drawing.SystemColors.Window;
+            this.txtJobplace.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.txtJobplace.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.txtJobplace.BorderRadius = 10;
+            this.txtJobplace.BorderSize = 1;
+            this.txtJobplace.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtJobplace.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtJobplace.Location = new System.Drawing.Point(621, 166);
+            this.txtJobplace.Margin = new System.Windows.Forms.Padding(4);
+            this.txtJobplace.Multiline = false;
+            this.txtJobplace.Name = "txtJobplace";
+            this.txtJobplace.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtJobplace.PasswordChar = false;
+            this.txtJobplace.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtJobplace.PlaceholderText = "";
+            this.txtJobplace.Size = new System.Drawing.Size(157, 31);
+            this.txtJobplace.TabIndex = 17;
+            this.txtJobplace.Texts = "";
+            this.txtJobplace.UnderlinedStyle = false;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(544, 75);
+            this.label6.Location = new System.Drawing.Point(544, 175);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(74, 13);
+            this.label6.Size = new System.Drawing.Size(65, 13);
             this.label6.TabIndex = 13;
-            this.label6.Text = "Nơi thường trú";
+            this.label6.Text = "Nơi làm việc";
             // 
             // txtFamily
             // 
+            this.txtFamily.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.txtFamily.BackColor = System.Drawing.SystemColors.Window;
             this.txtFamily.BorderColor = System.Drawing.Color.MediumSlateBlue;
             this.txtFamily.BorderFocusColor = System.Drawing.Color.HotPink;
@@ -242,16 +252,16 @@ namespace PeopleManager.gui.form
             this.txtFamily.BorderSize = 1;
             this.txtFamily.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFamily.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtFamily.Location = new System.Drawing.Point(124, 117);
+            this.txtFamily.Location = new System.Drawing.Point(123, 166);
             this.txtFamily.Margin = new System.Windows.Forms.Padding(4);
-            this.txtFamily.Multiline = false;
+            this.txtFamily.Multiline = true;
             this.txtFamily.Name = "txtFamily";
             this.txtFamily.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
             this.txtFamily.PasswordChar = false;
             this.txtFamily.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtFamily.PlaceholderText = "";
             this.txtFamily.Size = new System.Drawing.Size(157, 31);
-            this.txtFamily.TabIndex = 16;
+            this.txtFamily.TabIndex = 15;
             this.txtFamily.Texts = "";
             this.txtFamily.UnderlinedStyle = false;
             // 
@@ -259,11 +269,11 @@ namespace PeopleManager.gui.form
             // 
             this.label7.AutoSize = true;
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(11, 122);
+            this.label7.Location = new System.Drawing.Point(10, 171);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(96, 13);
+            this.label7.Size = new System.Drawing.Size(103, 13);
             this.label7.TabIndex = 15;
-            this.label7.Text = "Thuộc Hộ khẩu số";
+            this.label7.Text = "Thuộc Hộ khẩu số *";
             // 
             // txtRelationShip
             // 
@@ -274,7 +284,7 @@ namespace PeopleManager.gui.form
             this.txtRelationShip.BorderSize = 1;
             this.txtRelationShip.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRelationShip.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtRelationShip.Location = new System.Drawing.Point(406, 117);
+            this.txtRelationShip.Location = new System.Drawing.Point(405, 166);
             this.txtRelationShip.Margin = new System.Windows.Forms.Padding(4);
             this.txtRelationShip.Multiline = false;
             this.txtRelationShip.Name = "txtRelationShip";
@@ -283,7 +293,7 @@ namespace PeopleManager.gui.form
             this.txtRelationShip.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.txtRelationShip.PlaceholderText = "";
             this.txtRelationShip.Size = new System.Drawing.Size(126, 31);
-            this.txtRelationShip.TabIndex = 18;
+            this.txtRelationShip.TabIndex = 16;
             this.txtRelationShip.Texts = "";
             this.txtRelationShip.UnderlinedStyle = false;
             // 
@@ -291,11 +301,11 @@ namespace PeopleManager.gui.form
             // 
             this.label8.AutoSize = true;
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(298, 126);
+            this.label8.Location = new System.Drawing.Point(297, 175);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(101, 13);
+            this.label8.Size = new System.Drawing.Size(105, 13);
             this.label8.TabIndex = 17;
-            this.label8.Text = "Quan hệ với chủ hộ";
+            this.label8.Text = "Quan hệ với chủ hộ*";
             // 
             // btnOk
             // 
@@ -307,7 +317,7 @@ namespace PeopleManager.gui.form
             this.btnOk.FlatAppearance.BorderSize = 0;
             this.btnOk.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOk.ForeColor = System.Drawing.Color.White;
-            this.btnOk.Location = new System.Drawing.Point(621, 113);
+            this.btnOk.Location = new System.Drawing.Point(621, 214);
             this.btnOk.Name = "btnOk";
             this.btnOk.Size = new System.Drawing.Size(156, 34);
             this.btnOk.TabIndex = 19;
@@ -331,23 +341,170 @@ namespace PeopleManager.gui.form
             this.iconclose.TabStop = false;
             this.iconclose.Click += new System.EventHandler(this.iconclose_Click);
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(549, 25);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(54, 13);
+            this.label9.TabIndex = 21;
+            this.label9.Text = "Giới tính *";
+            // 
+            // rbtnMale
+            // 
+            this.rbtnMale.AutoSize = true;
+            this.rbtnMale.Checked = true;
+            this.rbtnMale.CheckedColor = System.Drawing.Color.MediumSlateBlue;
+            this.rbtnMale.ForeColor = System.Drawing.Color.White;
+            this.rbtnMale.Location = new System.Drawing.Point(623, 21);
+            this.rbtnMale.MinimumSize = new System.Drawing.Size(0, 21);
+            this.rbtnMale.Name = "rbtnMale";
+            this.rbtnMale.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.rbtnMale.Size = new System.Drawing.Size(57, 21);
+            this.rbtnMale.TabIndex = 22;
+            this.rbtnMale.TabStop = true;
+            this.rbtnMale.Text = "Nam";
+            this.rbtnMale.UnCheckedColor = System.Drawing.Color.Gray;
+            this.rbtnMale.UseVisualStyleBackColor = true;
+            // 
+            // rbtnFemale
+            // 
+            this.rbtnFemale.AutoSize = true;
+            this.rbtnFemale.CheckedColor = System.Drawing.Color.MediumSlateBlue;
+            this.rbtnFemale.ForeColor = System.Drawing.Color.White;
+            this.rbtnFemale.Location = new System.Drawing.Point(721, 21);
+            this.rbtnFemale.MinimumSize = new System.Drawing.Size(0, 21);
+            this.rbtnFemale.Name = "rbtnFemale";
+            this.rbtnFemale.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.rbtnFemale.Size = new System.Drawing.Size(49, 21);
+            this.rbtnFemale.TabIndex = 23;
+            this.rbtnFemale.Text = "Nữ";
+            this.rbtnFemale.UnCheckedColor = System.Drawing.Color.Gray;
+            this.rbtnFemale.UseVisualStyleBackColor = true;
+            // 
+            // txtAddress
+            // 
+            this.txtAddress.BackColor = System.Drawing.SystemColors.Window;
+            this.txtAddress.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.txtAddress.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.txtAddress.BorderRadius = 10;
+            this.txtAddress.BorderSize = 1;
+            this.txtAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtAddress.Location = new System.Drawing.Point(378, 116);
+            this.txtAddress.Margin = new System.Windows.Forms.Padding(4);
+            this.txtAddress.Multiline = false;
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtAddress.PasswordChar = false;
+            this.txtAddress.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtAddress.PlaceholderText = "";
+            this.txtAddress.Size = new System.Drawing.Size(154, 31);
+            this.txtAddress.TabIndex = 13;
+            this.txtAddress.Texts = "";
+            this.txtAddress.UnderlinedStyle = false;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(297, 125);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(39, 13);
+            this.label10.TabIndex = 26;
+            this.label10.Text = "Nơi ở *";
+            // 
+            // txtEthnic
+            // 
+            this.txtEthnic.BackColor = System.Drawing.SystemColors.Window;
+            this.txtEthnic.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.txtEthnic.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.txtEthnic.BorderRadius = 10;
+            this.txtEthnic.BorderSize = 1;
+            this.txtEthnic.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEthnic.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtEthnic.Location = new System.Drawing.Point(124, 116);
+            this.txtEthnic.Margin = new System.Windows.Forms.Padding(4);
+            this.txtEthnic.Multiline = false;
+            this.txtEthnic.Name = "txtEthnic";
+            this.txtEthnic.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtEthnic.PasswordChar = false;
+            this.txtEthnic.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtEthnic.PlaceholderText = "";
+            this.txtEthnic.Size = new System.Drawing.Size(157, 31);
+            this.txtEthnic.TabIndex = 12;
+            this.txtEthnic.Texts = "";
+            this.txtEthnic.UnderlinedStyle = false;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.Location = new System.Drawing.Point(22, 125);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(52, 13);
+            this.label11.TabIndex = 24;
+            this.label11.Text = "Dân tộc *";
+            // 
+            // txtbornplace
+            // 
+            this.txtbornplace.BackColor = System.Drawing.SystemColors.Window;
+            this.txtbornplace.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.txtbornplace.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.txtbornplace.BorderRadius = 10;
+            this.txtbornplace.BorderSize = 1;
+            this.txtbornplace.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbornplace.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtbornplace.Location = new System.Drawing.Point(623, 66);
+            this.txtbornplace.Margin = new System.Windows.Forms.Padding(4);
+            this.txtbornplace.Multiline = false;
+            this.txtbornplace.Name = "txtbornplace";
+            this.txtbornplace.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtbornplace.PasswordChar = false;
+            this.txtbornplace.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtbornplace.PlaceholderText = "";
+            this.txtbornplace.Size = new System.Drawing.Size(157, 31);
+            this.txtbornplace.TabIndex = 11;
+            this.txtbornplace.Texts = "";
+            this.txtbornplace.UnderlinedStyle = false;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(546, 75);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(52, 13);
+            this.label12.TabIndex = 28;
+            this.label12.Text = "Nơi sinh *";
+            // 
             // SubPanelAddPerson
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(75)))), ((int)(((byte)(105)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.Controls.Add(this.txtbornplace);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.txtAddress);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.txtEthnic);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.rbtnFemale);
+            this.Controls.Add(this.rbtnMale);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.iconclose);
             this.Controls.Add(this.btnOk);
             this.Controls.Add(this.txtRelationShip);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.txtFamily);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.txtAddressWork);
+            this.Controls.Add(this.txtJobplace);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtJob);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.txtPhoneNumber);
+            this.Controls.Add(this.txtNickname);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.dateBirth);
@@ -357,7 +514,7 @@ namespace PeopleManager.gui.form
             this.Controls.Add(this.label1);
             this.Name = "SubPanelAddPerson";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Size = new System.Drawing.Size(819, 160);
+            this.Size = new System.Drawing.Size(819, 260);
             this.Load += new System.EventHandler(this.SubPanelAddPerson_Load);
             ((System.ComponentModel.ISupportInitialize)(this.iconclose)).EndInit();
             this.ResumeLayout(false);
@@ -372,11 +529,11 @@ namespace PeopleManager.gui.form
         private System.Windows.Forms.Label label2;
         private RJCodeAdvance.RJControls.RJDatePicker dateBirth;
         private System.Windows.Forms.Label label3;
-        private RJCodeAdvance.RJControls.RJTextBox txtPhoneNumber;
+        private RJCodeAdvance.RJControls.RJTextBox txtNickname;
         private System.Windows.Forms.Label label4;
         private RJCodeAdvance.RJControls.RJTextBox txtJob;
         private System.Windows.Forms.Label label5;
-        private RJCodeAdvance.RJControls.RJTextBox txtAddressWork;
+        private RJCodeAdvance.RJControls.RJTextBox txtJobplace;
         private System.Windows.Forms.Label label6;
         private RJCodeAdvance.RJControls.RJTextBox txtFamily;
         private System.Windows.Forms.Label label7;
@@ -384,5 +541,14 @@ namespace PeopleManager.gui.form
         private System.Windows.Forms.Label label8;
         private RJCodeAdvance.RJControls.RJButton btnOk;
         private FontAwesome.Sharp.IconPictureBox iconclose;
+        private System.Windows.Forms.Label label9;
+        private RJCodeAdvance.RJControls.RJRadioButton rbtnMale;
+        private RJCodeAdvance.RJControls.RJRadioButton rbtnFemale;
+        private RJCodeAdvance.RJControls.RJTextBox txtAddress;
+        private System.Windows.Forms.Label label10;
+        private RJCodeAdvance.RJControls.RJTextBox txtEthnic;
+        private System.Windows.Forms.Label label11;
+        private RJCodeAdvance.RJControls.RJTextBox txtbornplace;
+        private System.Windows.Forms.Label label12;
     }
 }

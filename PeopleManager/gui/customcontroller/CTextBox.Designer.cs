@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 namespace PeopleManager.gui.customcontroller
 {
-    partial class CTextBox :TextBox
+    partial class CTextBox
     {
         /// <summary> 
         /// Required designer variable.
@@ -32,6 +32,7 @@ namespace PeopleManager.gui.customcontroller
         /// Required method for Designer support - do not modify 
         /// the contents of this method with the code editor.
         /// </summary>
+        private System.Windows.Forms.TextBox textBox1;
         private void InitializeComponent()
         {
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -55,8 +56,7 @@ namespace PeopleManager.gui.customcontroller
             // 
             // RJTextBox
             // 
-         //   this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-         
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.Controls.Add(this.textBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -72,6 +72,6 @@ namespace PeopleManager.gui.customcontroller
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+       
     }
 }

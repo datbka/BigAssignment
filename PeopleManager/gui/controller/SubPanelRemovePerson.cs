@@ -8,18 +8,23 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PeopleManager.gui.form
+namespace PeopleManager.gui.controller
 {
-    public partial class SubPanelUpdate : UserControl
+    public partial class SubPanelRemovePerson : UserControl
     {
-        public SubPanelUpdate()
+        public SubPanelRemovePerson()
         {
             InitializeComponent();
         }
 
-        private void iconPictureBox1_Click(object sender, EventArgs e)
+        private void iconClose_Click(object sender, EventArgs e)
         {
             this.Dispose();
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

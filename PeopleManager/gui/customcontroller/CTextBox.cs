@@ -1,16 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Drawing;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Drawing;
 using System.Drawing.Drawing2D;
+
 namespace PeopleManager.gui.customcontroller
 {
-    public partial class CTextBox : TextBox
+    [DefaultEvent("_TextChanged")]
+    public partial class CTextBox : UserControl
     {
-
         #region -> Fields
         //Fields
         private Color borderColor = Color.MediumSlateBlue;
@@ -38,7 +41,7 @@ namespace PeopleManager.gui.customcontroller
         }
 
         #region -> Properties
-
+        [Category("RJ Code Advance")]
         public Color BorderColor
         {
             get { return borderColor; }
@@ -49,14 +52,14 @@ namespace PeopleManager.gui.customcontroller
             }
         }
 
-
+        [Category("RJ Code Advance")]
         public Color BorderFocusColor
         {
             get { return borderFocusColor; }
             set { borderFocusColor = value; }
         }
 
-
+        [Category("RJ Code Advance")]
         public int BorderSize
         {
             get { return borderSize; }
@@ -70,7 +73,7 @@ namespace PeopleManager.gui.customcontroller
             }
         }
 
-
+        [Category("RJ Code Advance")]
         public bool UnderlinedStyle
         {
             get { return underlinedStyle; }
@@ -81,7 +84,7 @@ namespace PeopleManager.gui.customcontroller
             }
         }
 
-
+        [Category("RJ Code Advance")]
         public bool PasswordChar
         {
             get { return isPasswordChar; }
@@ -93,14 +96,14 @@ namespace PeopleManager.gui.customcontroller
             }
         }
 
-
+        [Category("RJ Code Advance")]
         public bool Multiline
         {
             get { return textBox1.Multiline; }
             set { textBox1.Multiline = value; }
         }
 
-
+        [Category("RJ Code Advance")]
         public override Color BackColor
         {
             get { return base.BackColor; }
@@ -111,7 +114,7 @@ namespace PeopleManager.gui.customcontroller
             }
         }
 
-
+        [Category("RJ Code Advance")]
         public override Color ForeColor
         {
             get { return base.ForeColor; }
@@ -122,7 +125,7 @@ namespace PeopleManager.gui.customcontroller
             }
         }
 
-
+        [Category("RJ Code Advance")]
         public override Font Font
         {
             get { return base.Font; }
@@ -135,7 +138,7 @@ namespace PeopleManager.gui.customcontroller
             }
         }
 
-
+        [Category("RJ Code Advance")]
         public string Texts
         {
             get
@@ -150,7 +153,7 @@ namespace PeopleManager.gui.customcontroller
             }
         }
 
-
+        [Category("RJ Code Advance")]
         public int BorderRadius
         {
             get { return borderRadius; }
@@ -164,7 +167,7 @@ namespace PeopleManager.gui.customcontroller
             }
         }
 
-
+        [Category("RJ Code Advance")]
         public Color PlaceholderColor
         {
             get { return placeholderColor; }
@@ -176,7 +179,7 @@ namespace PeopleManager.gui.customcontroller
             }
         }
 
-
+        [Category("RJ Code Advance")]
         public string PlaceholderText
         {
             get { return placeholderText; }
@@ -199,11 +202,11 @@ namespace PeopleManager.gui.customcontroller
             if (this.DesignMode)
                 UpdateControlHeight();
         }
-       /* protected override void OnLoad(EventArgs e)
+        protected override void OnLoad(EventArgs e)
         {
             base.OnLoad(e);
             UpdateControlHeight();
-        }*/
+        }
         protected override void OnPaint(PaintEventArgs e)
         {
             base.OnPaint(e);
@@ -363,7 +366,21 @@ namespace PeopleManager.gui.customcontroller
             this.Invalidate();
             SetPlaceholder();
         }
+
+   
         ///::::+
         #endregion
+
+        /*   private void InitializeComponent()
+           {
+               this.SuspendLayout();
+               // 
+               // CTextBox
+               // 
+               this.Name = "CTextBox";
+               this.Size = new System.Drawing.Size(424, 150);
+               this.ResumeLayout(false);
+
+           }*/
     }
 }
